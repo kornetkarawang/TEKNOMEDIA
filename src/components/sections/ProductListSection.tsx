@@ -1,6 +1,6 @@
 // src/components/sections/ProductListSection.tsx
 import React from 'react';
-import { ShoppingCart, HardHat, Server } from 'lucide-react'; 
+import { ShoppingCart} from 'lucide-react'; 
 
 // Data Dummy List Produk (Contoh 6 Produk)
 const allProducts = [
