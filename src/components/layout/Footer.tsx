@@ -72,15 +72,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-background/70 text-sm">
               <li className="flex items-start">
                 <MapPin className="w-4 h-4 mr-3 mt-0.5 flex-shrink-0 text-primary" />
-                <span>Jl. Pendidikan No. 123, Jakarta Selatan</span>
+                <span>M9JH+PJV, Jl. Lemah Mulya, Lemahmulya, Kec. Majalaya, Karawang, Jawa Barat 41371</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-3 flex-shrink-0 text-primary" />
-                <span>+62 21 1234 5678</span>
+                <span>+62 812 9494 2081</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-4 h-4 mr-3 flex-shrink-0 text-primary" />
-                <span>info@teknomedia.id</span>
+                <span>teknomediainfo77@gmail.com</span>
               </li>
             </ul>
           </div>

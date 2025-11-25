@@ -2,13 +2,12 @@
 import React from 'react';
 import HeroSection from '../components/sections/HeroSection'; 
 import AboutSection from '../components/sections/AboutSection';
-
 import WhyUsSection from '../components/sections/WhyUsSection'; 
 import ServicesSection from '../components/sections/ServicesSection'; 
 import FeaturedProductsSection from '../components/sections/FeaturedProductsSection';
-import ProductListSection from '../components/sections/ProductListSection';
 import TestimonialsSection from '../components/sections/TestimonialsSection';
 import TeamSection from '../components/sections/TeamSection';
+import GaleriListSection from '../components/sections/GaleryTeam';
 
 const HomePage: React.FC = () => {
   return (
@@ -17,10 +16,10 @@ const HomePage: React.FC = () => {
       <AboutSection />
       <WhyUsSection /> 
       <ServicesSection /> 
-      <FeaturedProductsSection /> 
-      <ProductListSection /> 
+      <FeaturedProductsSection />  
       <TestimonialsSection /> 
-      <TeamSection /> 
+      <TeamSection />
+      <GaleriListSection />
     </main>
   );
 };
