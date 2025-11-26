@@ -179,17 +179,20 @@ const PortalBeritaSection = () => {
       scriptTags.push(script);
     });
 
-    // Cleanup: Hapus script dan fungsi global saat komponen dilepas
+    // --- CLEANUP YANG SUDAH DIBERSIHKAN DARI GARIS MERAH `_` ---
     return () => {
-      scriptTags.forEach(script => {
-        if (document.body.contains(script)) {
-          document.body.removeChild(script);
+        // Hapus tag <script>
+        scriptTags.forEach(script => {
+            if (document.body.contains(script)) {
+                document.body.removeChild(script);
+            }
+        });
+        
+        // Hapus fungsi global menggunakan for loop (menggantikan forEach((_, index) => ...))
+        for (let index = 0; index < totalExpectedResponses; index++) {
+             const callbackName = `bloggerjsonp_${index}`;
+             delete window[callbackName];
         }
-      });
-      BLOG_SOURCES.forEach((_, index) => {
-        const callbackName = `bloggerjsonp_${index}`;
-        delete window[callbackName];
-      });
     };
   }, [BLOG_SOURCES, MAX_RESULTS]);
 
